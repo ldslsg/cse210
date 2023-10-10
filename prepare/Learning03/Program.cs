@@ -1,5 +1,9 @@
 using System;
 
+private list<>
+{
+
+}
 class Program
 {
     static void Main(string[] args)
@@ -7,3 +11,6 @@ class Program
         Console.WriteLine("Hello Learning03 World!");
     }
 }
+// Promt Lists <strings>
+// Entry
+// Journal
