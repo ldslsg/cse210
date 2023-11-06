@@ -1,0 +1,39 @@
+Base Class: Goal
+    - Attributes:
+        - Name (string)
+        - Points (int)
+        - IsComplete (bool)
+    - Methods:
+        - MarkComplete()
+        - GainPoints(int points)
+
+Derived Class: SimpleGoal (inherits from Goal)
+    - Attributes:
+        - Value (int)
+    - Methods:
+        - MarkComplete()
+
+Derived Class: EternalGoal (inherits from Goal)
+    - Attributes:
+        - TimesRecorded (int)
+    - Methods:
+        - RecordEvent()
+
+Derived Class: ChecklistGoal (inherits from Goal)
+    - Attributes:
+        - TimesCompleted (int)
+        - DesiredTimes (int)
+        - BonusPoints (int)
+    - Methods:
+        - RecordEvent()
+
+Class: User
+    - Attributes:
+        - Score (int)
+        - Goals (List<Goal>)
+    - Methods:
+        - CreateGoal(Goal goal)
+        - RecordEvent(Goal goal)
+        - DisplayScore()
+        - SaveGoals()
+        - LoadGoals()
