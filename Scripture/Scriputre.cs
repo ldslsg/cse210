@@ -11,17 +11,6 @@ class Scripture
         words = text.Split(' ').Select(word => new Word(word)).ToList();
     }
 
-    public string Reference { get; private set; }
-    private List<Word> words;
-    private Random random = new Random();
-    private int hiddenCount = 0;
-
-    public Scripture(string reference, string text)
-    {
-        Reference = reference;
-        words = text.Split(' ').Select(word => new Word(word)).ToList();
-    }
-
     public bool IsComplete()
     {
         return hiddenCount == words.Count;

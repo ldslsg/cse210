@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
 class Reference
 {
     public string Book { get; private set; }
@@ -8,6 +12,7 @@ class Reference
 
     public Reference(string reference)
     {
+        Book = string.Empty; // Initialize to a default value
         ParseReference(reference);
     }
 
