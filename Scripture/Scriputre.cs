@@ -3,7 +3,7 @@ class Scripture
     public Reference Reference { get; private set; }
     private List<Word> words;
     private Random random = new Random();
-    private int hiddenCount = 0;
+    public int hiddenCount = 0;
 
     public Scripture(string reference, string text)
     {
