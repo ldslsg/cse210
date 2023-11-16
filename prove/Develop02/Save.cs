@@ -10,9 +10,9 @@ class Save
         try
         {
             // Assuming you have a collection of entries, you can format them as CSV
-            string[] entries = { writeObject.get_journal_entry() };
+            string[] entries = writeObject.get_journal_entry();
             string csvContent = string.Join(Environment.NewLine, entries);
-
+            
             File.WriteAllText(filename, csvContent);
             Console.WriteLine("Journal saved successfully as a .csv file.");
         }

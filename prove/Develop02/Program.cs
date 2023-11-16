@@ -15,7 +15,7 @@ class Program
             Console.WriteLine("3. Load");
             Console.WriteLine("4. Save");
             Console.WriteLine("5. Quit");
-            Console.WriteLine("What was the best part of my day?");
+            Console.WriteLine("What would you like to do?");
             
             string test2 = (Console.ReadLine());
             i = int.Parse(test2);

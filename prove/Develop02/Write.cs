@@ -1,14 +1,15 @@
+
 public class Write
 {
-    string journal_entry = null;
+    private List<string> journal_entry = new List<string>();
 
-    public void user_input(string entry)
+    public void user_input(string input)
     {
-        journal_entry = entry;
+        journal_entry.Add(input);
     }
 
-    public string get_journal_entry()
+    public string[] get_journal_entry()
     {
-        return journal_entry;
+        return journal_entry.ToArray();
     }
 }
