@@ -1,4 +1,4 @@
-class Goal
+public class Goal
 {
     public string Name { get; }
     public int Value { get; }

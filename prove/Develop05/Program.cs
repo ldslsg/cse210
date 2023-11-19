@@ -8,11 +8,15 @@ class Program
     Goal goal1 = new SimpleGoal("Run a marathon", 1000);
     Goal goal2 = new EternalGoal("Read scriptures", 100);
     Goal goal3 = new ChecklistGoal("Attend the temple", 50, 10, 500);
+    Goal goal4 = new ProgressGoal("Marathon training", 500, 10000);
+    Goal goal5 = new NegativeGoal("Avoid fast food", 50);
 
     user.AddGoal(goal1);
     user.AddGoal(goal2);
     user.AddGoal(goal3);
-
+    user.AddGoal(goal4);
+    user.AddGoal(goal5);
+    ((ProgressGoal)goal4).UpdateProgress(2000);
     while (true)
     {
         Console.WriteLine("1. Display Goals");
